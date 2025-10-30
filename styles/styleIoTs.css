@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 0;
   height: 200%;
   font-family: Arial, sans-serif;
@@ -13,7 +14,7 @@ h1 {
   text-align: center;
   margin-top: 50px;
   color: white;
-  text-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
 }
 
 footer {
@@ -28,8 +29,7 @@ footer {
   z-index: 10;
 }
 
-
-.footer a{
+.footer a {
   color: #00eeff;
   text-decoration: none;
 }
@@ -41,17 +41,16 @@ footer {
   position: relative;
   z-index: 10;
 }
-    
-    
+
 .timeline {
   position: relative;
   margin: 50px 0;
-  padding: 0;
   list-style: none;
+  padding: 0;
 }
-    
+
 .timeline::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   top: 0;
@@ -63,40 +62,72 @@ footer {
 
 .timeline-item {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 120px;
+  /* garante espaço vertical para imagem + conteúdo */
+  min-height: 160px;
 }
 
-.timeline-item:nth-child(odd) {
-  padding-right: calc(50% + 30px);
-  text-align: right;
-}
-
-.timeline-item:nth-child(even) {
-  padding-left: calc(50% + 30px);
-  text-align: left;
-}
-
+/* BOLA DO ANO */
 .timeline-badge {
   position: absolute;
-  top: 0;
+  top: 20px; /* ajusta se precisares */
   left: 50%;
+  transform: translateX(-50%);
   width: 60px;
   height: 60px;
   background: #0044ff;
-  color: #fff;
+  color: white;
   border-radius: 50%;
-  line-height: 60px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: bold;
-  transform: translateX(-50%);
-  z-index: 0;
+  z-index: 3;
 }
 
+/* CAIXA DE TEXTO - agora absoluta para alternar com nth-child */
 .timeline-content {
+  position: absolute; /* crucial: absoluto relativamente ao li */
+  top: 50%;
+  transform: translateY(-50%); /* centra verticalmente */
+  width: 40%;
   background: #fff;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  margin-left: 15px;
-  margin-right: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.timeline-image {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28%;
+  z-index: 2;
+}
+
+.timeline-image img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  display: block;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  left: 0;
+  text-align: right;
+}
+.timeline-item:nth-child(odd) .timeline-image {
+  right: 0;
+  transform: translateY(-50%) translateX(20px);
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  right: 0;
+  text-align: left;
+}
+.timeline-item:nth-child(even) .timeline-image {
+  left: 0;
+  transform: translateY(-50%) translateX(-20px);
 }

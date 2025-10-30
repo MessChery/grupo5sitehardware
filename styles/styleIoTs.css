@@ -63,14 +63,12 @@ footer {
 .timeline-item {
   position: relative;
   margin-bottom: 120px;
-  /* garante espaço vertical para imagem + conteúdo */
   min-height: 160px;
 }
 
-/* BOLA DO ANO */
 .timeline-badge {
   position: absolute;
-  top: 20px; /* ajusta se precisares */
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
   width: 60px;
@@ -85,11 +83,10 @@ footer {
   z-index: 3;
 }
 
-/* CAIXA DE TEXTO - agora absoluta para alternar com nth-child */
 .timeline-content {
-  position: absolute; /* crucial: absoluto relativamente ao li */
+  position: absolute;
   top: 50%;
-  transform: translateY(-50%); /* centra verticalmente */
+  transform: translateY(-50%);
   width: 40%;
   background: #fff;
   padding: 20px;

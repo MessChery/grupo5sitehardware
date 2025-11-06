@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("navbar/navBar.html", {
+  fetch("./navBar.html", {
     mode: 'no-cors'
   })
     .then(response => response.text())

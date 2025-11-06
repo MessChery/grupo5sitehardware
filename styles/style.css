@@ -4,31 +4,6 @@ body {
   height: 100vh;
 }
 
-footer {
-  background-color: #477998;
-  color: white;
-  padding: 30px 0;
-  text-align: center;
-  position: relative;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  z-index: 10;
-}
-
-.footer a {
-  color: #00eeff;
-  text-decoration: none;
-}
-
-.navbar {
-  background-color: #477998 !important;
-  color: white;
-  font-size: 13px;
-  position: relative;
-  z-index: 10;
-}
-
 .hero-section {
   background-image: url("https://img1.wallspic.com/crops/5/3/635/635-robot-computer_hardware-sound-technology-cpu-1920x1080.jpg");
   background-size: cover;

@@ -7,33 +7,397 @@
     <title>Montagem de Hardware</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/styleMontagemDeHardware.css" rel="stylesheet">
 </head>
 
 <body>
-
     <div id="navbar-container"></div>
 
+    <!-- Boas Práticas -->
+    <section class="card-section fade-in">
+        <div class="section-bg">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Boas Práticas Antes de Iniciar</h2>
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Monta o PC numa superfície limpa, plana e sem tapetes.</li>
+                            <li>Evita eletricidade estática (toca num objeto metálico aterrado).</li>
+                            <li>Trabalha com boa iluminação e organiza parafusos em caixas pequenas.</li>
+                            <li>Desliga a PSU da corrente e só liga após a montagem completa.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div id="carouselBoasPraticas" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselBoasPraticas" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselBoasPraticas" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/montagem_de_hardware/HDD-grafica-RAM.jpg" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/montagem_de_hardware/CPU-COOLER.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBoasPraticas"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselBoasPraticas"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </section>
 
-    <footer class="footer">
-        <div class="container">
-            <p>Trabalho de Projeto - UFCD 0749 Arquitetura de hardware</p>
-            <a href="#">Trabalho Projeto</a> © 2025 by <a href="#">Grupo 1</a> is licensed
-            under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img
-                src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt=""
-                style="max-width: 1em;max-height:1em;margin-left: .2em;"><img
-                src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt=""
-                style="max-width: 1em;max-height:1em;margin-left: .2em;"><img
-                src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt=""
-                style="max-width: 1em;max-height:1em;margin-left: .2em;"><img
-                src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt=""
-                style="max-width: 1em;max-height:1em;margin-left: .2em;">
-        </div>
-    </footer>
+    <!-- Erros Comuns -->
+    <section class="card-section fade-in">
+        <div class="section-bg">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Erros Comuns a Evitar</h2>
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Forçar componentes (CPU, RAM, PCIe).</li>
+                            <li>Ligar cabos errados (EPS/PCIe trocados).</li>
+                            <li>Aplicar pasta térmica a mais.</li>
+                            <li>Tocar nos contactos dourados (RAM, PCIe, M.2).</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div id="carouselErrosComuns" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselErrosComuns" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselErrosComuns" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/montagem_de_hardware/errosComunsAEvitar.png" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselErrosComuns"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselErrosComuns"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Preparar a Caixa e a Fonte -->
+    <section class="card-section fade-in">
+        <div class="section-bg">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Preparar a Caixa e a Fonte</h2>
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Abre a caixa retirando ambos os painéis laterais.</li>
+                            <li>Instala a fonte de alimentação no compartimento adequado.</li>
+                            <li>Aparafusa a fonte firmemente e organiza os cabos.</li>
+                            <li>Confirma os espaçadores (“standoffs”) da motherboard.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div id="carouselCaixaeFonte" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselCaixaeFonte" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselCaixaeFonte" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/montagem_de_hardware/caixaDoPC.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/montagem_de_hardware/fonteDeAlimentacao.jpg" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaixaeFonte"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselCaixaeFonte"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Montar CPU, RAM e Cooler -->
+    <section class="card-section fade-in">
+        <div class="section-bg">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Montar CPU, RAM e Cooler</h2>
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Alinha a seta dourada do CPU com a seta no socket e encaixa suavemente.</li>
+                            <li>Aplica uma pequena gota de pasta térmica (tamanho de uma ervilha).</li>
+                            <li>Monta o cooler e liga o cabo “CPU_FAN”.</li>
+                            <li>Instala a RAM nos slots indicados (ex: A2 e B2).</li>
+                        </ul>
+                        <p><strong>Dica:</strong> É mais fácil montar estes componentes fora da caixa.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div id="carouselBoasPraticasAntesIniciar" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselBoasPraticasAntesIniciar"
+                                data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselBoasPraticasAntesIniciar"
+                                data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/montagem_de_hardware/cpuarrow.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/montagem_de_hardware/pastatermica.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button"
+                            data-bs-target="#carouselBoasPraticasAntesIniciar" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button"
+                            data-bs-target="#carouselBoasPraticasAntesIniciar" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Motherboard -->
+    <section class="card-section fade-in">
+        <div class="section-bg">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Instalar a Motherboard</h2>
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Confirma os espaçadores apenas nos pontos corretos.</li>
+                            <li>Coloca o “I/O Shield” na caixa.</li>
+                            <li>Baixa cuidadosamente a motherboard e alinha com os standoffs.</li>
+                            <li>Aparafusa levemente, sem apertar demais.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div id="carouselMotherboard" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselMotherboard" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselMotherboard" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/montagem_de_hardware/motherboard.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/montagem_de_hardware/ioShield.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMotherboard"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselMotherboard"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Armazenamento -->
+    <section class="card-section fade-in">
+        <div class="section-bg">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Instalar Armazenamento (SSD/HDD)</h2>
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Insere o SSD M.2 no slot e fixa com o parafuso.</li>
+                            <li>Para HDDs ou SSDs SATA, insere nas baías e liga os cabos de dados e energia.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div id="carouselArmazenamento" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselArmazenamento" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselArmazenamento" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/montagem_de_hardware/HDDinstall.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/montagem_de_hardware/SSDinstall.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselArmazenamento"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselArmazenamento"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Placa Gráfica -->
+    <section class="card-section fade-in">
+        <div class="section-bg">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Instalar a Placa Gráfica (GPU)</h2>
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Remove as tampas PCIe da caixa.</li>
+                            <li>Insere a GPU no slot PCIe x16 e aparafusa.</li>
+                            <li>Liga os cabos PCIe da fonte (6/8 pinos conforme necessário).</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div id="carouselPlacaGrafica" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselPlacaGrafica" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselPlacaGrafica" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/montagem_de_hardware/instalarGrafica.jpg" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/montagem_de_hardware/instalarGrafica2.jpg" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPlacaGrafica"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselPlacaGrafica"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Conectar Cabos -->
+    <section class="card-section fade-in">
+        <div class="section-bg">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Conectar Cabos e Primeira Inicialização</h2>
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Liga o conector ATX 24 pinos e o EPS 8 pinos à motherboard.</li>
+                            <li>Conecta cabos do painel frontal (Power, Reset, LEDs).</li>
+                            <li>Organiza cabos com braçadeiras para melhor fluxo de ar.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div id="carouselCabos" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselCabos" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselCabos" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/montagem_de_hardware/cabosConectados.jpg" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/montagem_de_hardware/cableManagment2.jpg" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCabos"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselCabos"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <div id="footer-container"></div>
+
 
     <!-- Scripts Bootstrap/JS -->
     <script src="navbar/navBar.js"></script>
+    <script src="footer/footer.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const fadeEls = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        });
+        fadeEls.forEach(el => observer.observe(el));
+    </script>
 </body>
 
 </html>

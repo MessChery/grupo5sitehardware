@@ -6,14 +6,416 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arquitetura de Hardware</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="styles/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link href="styles/styleHistoriaDaInfo.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </head>
 
 <body>
     <div id="navbar-container"></div>
 
+    <div class="container-introduction p-4">
+        <h2 class="text-center mb-3 fw-bold pt-5">História da Informática</h2>
+        <h3 class="text-center mb-3">Pré-história da informática (antes do século XX)</h3>
+        <p>Antes mesmo da criação dos computadores, o ser humano já buscava maneiras de facilitar cálculos e organizar
+            informações. A pré-história da informática reúne os primeiros instrumentos e ideias que serviram de base
+            para o
+            surgimento da computação moderna.</p>
+    </div>
 
+    <div class="row g-4 mb-5 mt-4 card-container">
+        <div class="timeline-line" data-aos="fade-up">
+            <span class="timeline-dot" style="left: 12%;"></span>
+            <span class="timeline-dot" style="left: 38%;"></span>
+            <span class="timeline-dot" style="left: 63%;"></span>
+            <span class="timeline-dot" style="left: 88%;"></span>
+        </div>
+        <div class="col-md-3" data-aos="fade-up">
+            <div class="card decade-card h-100" role="button">
+                <img src="images/historia_da_informatica/abaco2500ac.png" class="card-img-top" alt="Ábaco">
+                <div class="card-body text-center">
+                    <div class="decade-year">c. 2500 a.C. - <strong>Ábaco</strong></div>
+                    <p class="card-text mt-2">Primeiro instrumento de cálculo, usado para operações simples como somas e
+                        subtrações.</p>
+                    <div class="full-content d-none">
+                        <p>O ábaco é considerado um dos primeiros instrumentos de cálculo da história e um dos
+                            antepassados do computador.
+                            Criado há milhares de anos, foi usado por povos como os chineses e os romanos para realizar
+                            operações simples, como somas e subtrações.
+                            Apesar de ser muito antigo, o ábaco marcou o início da evolução dos sistemas de cálculo que
+                            mais tarde levariam ao desenvolvimento da informática moderna.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="50">
+            <div class="card decade-card h-100" role="button">
+                <img src="images/historia_da_informatica/pascalina(1642).png" class="card-img-top" alt="Pascalina">
+                <div class="card-body text-center">
+                    <div class="decade-year">1642 - <strong>Pascalina</strong></div>
+                    <p class="card-text mt-2">Máquina mecânica de Blaise Pascal para somar e subtrair automaticamente.
+                    </p>
+                    <div class="full-content d-none">
+                        <p>A Pascalina foi uma das primeiras calculadoras mecânicas, criada em 1642 por Blaise Pascal.
+                            Funcionava com engrenagens e rodas dentadas, permitindo realizar somas e subtrações de forma
+                            automática.
+                            Foi um grande avanço para a época e marcou o início da mecanização dos cálculos,
+                            influenciando o desenvolvimento das futuras máquinas de calcular e, mais tarde, dos
+                            computadores.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="card decade-card h-100" role="button">
+                <img src="images/historia_da_informatica/leibniz(1673).png" class="card-img-top"
+                    alt="Máquina de Leibniz">
+                <div class="card-body text-center">
+                    <div class="decade-year">1673 - <strong>Máquina de Leibniz</strong></div>
+                    <p class="card-text mt-2">Aperfeiçoou a Pascalina; podia multiplicar e dividir automaticamente.</p>
+                    <div class="full-content d-none">
+                        <p>A Máquina de Leibniz foi criada em 1673 pelo matemático e filósofo alemão Gottfried Wilhelm
+                            Leibniz.
+                            Ela aperfeiçoou a ideia da Pascalina, permitindo não só somar e subtrair, mas também
+                            multiplicar e dividir automaticamente.
+                            Foi um passo importante na evolução das máquinas de calcular e contribuiu para o
+                            desenvolvimento da informática moderna.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Máquina Analítica -->
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="150">
+            <div class="card decade-card h-100" role="button">
+                <img src="images/historia_da_informatica/maquinaanalitica(1837).png" class="card-img-top"
+                    alt="Máquina Analítica">
+                <div class="card-body text-center">
+                    <div class="decade-year">1837 - <strong>Máquina Analítica</strong></div>
+                    <p class="card-text mt-2">Projeto de Charles Babbage — primeiro conceito de computador programável.
+                    </p>
+                    <div class="full-content d-none">
+                        <p>A Máquina Analítica foi projetada em 1837 por Charles Babbage, considerado o pai do
+                            computador.
+                            Ela foi a primeira ideia de um computador programável, capaz de realizar cálculos complexos
+                            automaticamente usando cartões perfurados.
+                            Ada Lovelace, considerada a primeira programadora da história, escreveu instruções
+                            (programas) para a Máquina Analítica, mostrando o potencial de criar sequências de operações
+                            matemáticas de forma automática.
+                            Embora nunca tenha sido totalmente construída, a Máquina Analítica introduziu conceitos
+                            fundamentais, como memória e programação, que influenciaram os computadores
+                            modernos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-line" data-aos="fade-up">
+            <span class="timeline-dot" style="left: 12%;"></span>
+            <span class="timeline-dot" style="left: 38%;"></span>
+            <span class="timeline-dot" style="left: 63%;"></span>
+            <span class="timeline-dot" style="left: 88%;"></span>
+        </div>
+
+        <div class="col-md-3" data-aos="fade-up">
+            <div class="card decade-card h-100" role="button">
+                <img src="images/historia_da_informatica/maquinacartoes(1890).png" class="card-img-top" alt="Hollerith">
+                <div class="card-body text-center">
+                    <div class="decade-year">1890 - <strong>Cartões perfurados (Hollerith)</strong></div>
+                    <p class="card-text mt-2">Utilizados no censo — tecnologia que deu origem à IBM.</p>
+                    <div class="full-content d-none">
+                        <p>A Máquina de Cartões Perfurados foi desenvolvida no final do século XIX por Herman Hollerith.
+                            Ela utilizava cartões perfurados para armazenar e processar informações de forma automática,
+                            acelerando tarefas como o censo nos Estados Unidos.
+                            Essa tecnologia marcou o início do processamento de dados mecânico e é considerada um passo
+                            importante na evolução dos computadores modernos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Z3 -->
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="50">
+            <div class="card decade-card h-100" role="button">
+                <img src="images/historia_da_informatica/Z3.png" class="card-img-top" alt="Z3">
+                <div class="card-body text-center">
+                    <div class="decade-year">1941 - <strong>Z3</strong></div>
+                    <p class="card-text mt-2">Primeiro computador eletromecânico totalmente automático (Konrad Zuse).
+                    </p>
+                    <div class="full-content d-none">
+                        <h5>Z3 (1941)</h5>
+                        <p>O Z3 foi criado em 1941 pelo engenheiro alemão Konrad Zuse e é considerado o primeiro
+                            computador eletromecânico totalmente programável.
+                            Ele utilizava relés para processar cálculos e podia executar operações aritméticas
+                            automaticamente.
+                            O Z3 representou um marco na história da informática, inaugurando a era dos computadores
+                            programáveis modernos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ENIAC -->
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="card decade-card h-100" role="button">
+                <img src="images/historia_da_informatica/eniac.png" class="card-img-top" alt="ENIAC">
+                <div class="card-body text-center">
+                    <div class="decade-year">1946 - <strong>ENIAC</strong></div>
+                    <p class="card-text mt-2">Primeiro computador eletrónico de uso geral; ocupava uma sala inteira.</p>
+                    <div class="full-content d-none">
+                        <h5>ENIAC (1946)</h5>
+                        <p>O ENIAC (Electronic Numerical Integrator and Computer) foi concluído em 1945 nos Estados
+                            Unidos por John Mauchly e J. Presper Eckert.
+                            Foi o primeiro computador eletrônico de grande escala, capaz de realizar cálculos complexos
+                            de forma muito mais rápida que as máquinas anteriores.
+                            O ENIAC marcou o início da era dos computadores eletrônicos modernos e influenciou todos os
+                            desenvolvimentos seguintes na informática.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- EDVAC / EDSAC -->
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="150">
+            <div class="card decade-card h-100" role="button">
+                <img src="images/historia_da_informatica/EDVAC.png" class="card-img-top" alt="EDVAC EDSAC">
+                <div class="card-body text-center">
+                    <div class="decade-year">1940 - 1950 - <strong>EDVAC / EDSAC</strong></div>
+                    <p class="card-text mt-2">Introduziram o conceito de programa armazenado na memória.</p>
+                    <div class="full-content d-none">
+                        <h5>EDVAC e EDSAC</h5>
+                        <p>O EDVAC (Electronic Discrete Variable Automatic Computer) e o EDSAC (Electronic Delay Storage
+                            Automatic Calculator) foram desenvolvidos na década de 1940 e início de 1950.
+                            O EDVAC, projetado nos Estados Unidos, foi um dos primeiros computadores a utilizar o
+                            conceito de programa armazenado na memória.
+                            O EDSAC, criado no Reino Unido, foi o primeiro computador a funcionar de forma prática para
+                            uso científico, processando cálculos de pesquisa automaticamente.
+                            Ambos representaram passos fundamentais na evolução dos computadores modernos, introduzindo
+                            ideias que ainda são base da programação atual.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-line" data-aos="fade-up">
+            <span class="timeline-dot" style="left: 12%;"></span>
+            <span class="timeline-dot" style="left: 38%;"></span>
+            <span class="timeline-dot" style="left: 63%;"></span>
+            <span class="timeline-dot" style="left: 88%;"></span>
+        </div>
+
+        <div class="col-md-3" data-aos="fade-up">
+            <div class="card decade-card h-100" role="button">
+                <img src="images/historia_da_informatica/cobolfortran.png" class="card-img-top" alt="Transístor">
+                <div class="card-body text-center">
+                    <div class="decade-year">1955–1965 - <strong>Transístores & Linguagens</strong></div>
+                    <p class="card-text mt-2">Transístores substituem válvulas e surgem FORTRAN e COBOL.</p>
+                    <div class="full-content d-none">
+                        <p>Nos anos 1950 e 1960 surgiram as primeiras linguagens de programação de alto nível: FORTRAN e
+                            COBOL.
+                            O FORTRAN foi criado para cálculos científicos e de engenharia, facilitando a programação de
+                            computadores para tarefas complexas.
+                            O COBOL foi desenvolvido para aplicações empresariais e administrativas, tornando os
+                            computadores mais acessíveis para negócios.
+                            Essas linguagens marcaram o início da programação moderna, permitindo que humanos se
+                            comunicassem com máquinas de forma mais eficiente e organizada.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Armazenamento: fitas e discos -->
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="50">
+            <div class="card decade-card h-100" role="button">
+                <img src="images/historia_da_informatica/fitasediscos.png" class="card-img-top" alt="Fitas e Discos">
+                <div class="card-body text-center">
+                    <div class="decade-year">1950 – 1960 - <strong>Fitas & Discos</strong></div>
+                    <p class="card-text mt-2">Introdução de fitas magnéticas e discos rígidos como armazenamento.</p>
+                    <div class="full-content d-none">
+                        <p>Com o avanço dos computadores, surgiram as fitas magnéticas e os discos rígidos como formas
+                            de armazenar dados.
+                            As fitas magnéticas, introduzidas nos anos 1950, permitiam guardar grandes quantidades de
+                            informação de forma sequencial.
+                            Os discos rígidos, surgidos na década de 1960, possibilitaram o acesso mais rápido e
+                            aleatório aos dados.
+                            Essas tecnologias transformaram a informática, tornando possível guardar, consultar e
+                            processar informações de maneira muito mais eficiente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Terceira geração / circuitos integrados -->
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="card decade-card h-100" role="button">
+                <img src="images/historia_da_informatica/circuitosintegrados.png" class="card-img-top"
+                    alt="Circuitos Integrados">
+                <div class="card-body text-center">
+                    <div class="decade-year">1965 – 1980 - <strong>Circuitos Integrados</strong></div>
+                    <p class="card-text mt-2">Uso de chips torna computadores menores e mais potentes.</p>
+                    <div class="full-content d-none">
+                        <p>Nos anos 1960, começaram a ser usados os circuitos integrados, ou chips, que reuniam vários
+                            transístores em um único componente.
+                            Isso tornou os computadores menores, mais rápidos e mais confiáveis, reduzindo o tamanho e o
+                            consumo de energia das máquinas.
+                            O uso de chips marcou o início da era moderna da informática, permitindo o desenvolvimento
+                            de computadores mais potentes e acessíveis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Datapoint / UNIX -->
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="150">
+            <div class="card decade-card h-100" role="button">
+                <img src="images/historia_da_informatica/datapoint2200.png" class="card-img-top" alt="Datapoint 2200">
+                <div class="card-body text-center">
+                    <div class="decade-year">1970 - <strong>Datapoint 2200 / UNIX</strong></div>
+                    <p class="card-text mt-2">Computadores mais compactos e o surgimento de sistemas operativos como o
+                        UNIX.</p>
+                    <div class="full-content d-none">
+                        <p>Na terceira geração, os circuitos integrados permitiram computadores menores, mais baratos e
+                            mais potentes.
+                            O Datapoint 2200 é um exemplo: compacto e voltado para escritórios, abriu caminho para os
+                            computadores pessoais.
+                            Essa geração tornou a informática mais acessível e próxima do dia a dia das pessoas.
+                            Com computadores mais complexos, surgiu a necessidade de organizar o funcionamento das
+                            máquinas.
+                            Foi nessa época que apareceram os sistemas operativos, que gerem memória, processos e
+                            periféricos.
+                            Um exemplo importante é o UNIX, que trouxe flexibilidade e eficiência, permitindo que
+                            diferentes programas e utilizadores compartilhassem o mesmo computador.
+                            Os sistemas operativos tornaram os computadores mais fáceis de usar e mais produtivos.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-line" data-aos="fade-up">
+            <span class="timeline-dot" style="left: 12%;"></span>
+            <span class="timeline-dot" style="left: 38%;"></span>
+            <span class="timeline-dot" style="left: 63%;"></span>
+            <span class="timeline-dot" style="left: 88%;"></span>
+        </div>
+
+        <div class="col-md-3" data-aos="fade-up">
+            <div class="card decade-card h-100" role="button">
+                <img src="images/historia_da_informatica/IBMpc.png" class="card-img-top"
+                    alt="Apple II IBM PC Macintosh">
+                <div class="card-body text-center">
+                    <div class="decade-year">1977 – 1984 - <strong>Apple II, IBM PC, Macintosh</strong></div>
+                    <p class="card-text mt-2">Nascimento do computador pessoal — Apple II, IBM PC, Macintosh.</p>
+                    <div class="full-content d-none">
+                        <p>No final dos anos 70 e início dos anos 80, os computadores pessoais começaram a chegar às
+                            casas e aos escritórios.
+                            O Apple II foi um dos primeiros a ter sucesso comercial, simples de usar e voltado para o
+                            público em geral.
+                            Depois, em 1981, surgiu o IBM 5150 PC – ver imagem – um marco na história da informática,
+                            tornando-se o padrão para os computadores pessoais.
+                            Pouco tempo depois, em 1984, a Apple lançou o Macintosh, com uma interface gráfica e rato,
+                            facilitando muito a interação com o computador.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="50">
+            <div class="card decade-card h-100" role="button">
+                <img src="images/historia_da_informatica/sistemasgraficos.png" class="card-img-top"
+                    alt="Sistemas Gráficos">
+                <div class="card-body text-center">
+                    <div class="decade-year">1980 – 1990 - <strong>Sistemas Gráficos & Internet</strong></div>
+                    <p class="card-text mt-2">Popularização do Windows/macOS e crescimento das redes/Internet.</p>
+                    <div class="full-content d-none">
+                        <p>Com o avanço dos computadores pessoais, surgiu a necessidade de os tornar mais fáceis de
+                            usar.
+                            Foi assim que apareceram os sistemas operativos com interface gráfica, onde o utilizador
+                            podia clicar em ícones e janelas, em vez de escrever comandos.
+                            O Windows 1.01, foi o primeiro passo da Microsoft nessa direção, em meados dos anos 80.
+                            Ao mesmo tempo, a Apple evoluiu o seu macOS, introduzindo uma experiência visual intuitiva.
+                            Estes sistemas gráficos tornaram o computador acessível a qualquer pessoa, marcando o início
+                            da informática moderna.
+                            Nos anos 80 e 90, os computadores começaram a ligar-se entre si, dando origem às redes
+                            locais, usadas em empresas e escolas para partilhar ficheiros e impressoras.
+                            Ao mesmo tempo, a Internet começou a expandir-se, ligando computadores de todo o mundo e
+                            permitindo comunicação e troca de informação em tempo real.
+                            Estas ligações mudaram completamente a forma como as pessoas trabalham, estudam e comunicam.
+                            O desenvolvimento das redes e da Internet marcou o início de uma era global de
+                            conectividade, que continua a crescer até hoje.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="card decade-card h-100" role="button">
+                <img src="images/historia_da_informatica/smartphones.png" class="card-img-top" alt="Smartphones e IoT">
+                <div class="card-body text-center">
+                    <div class="decade-year">2000–presente - <strong>Smartphones & IoT</strong></div>
+                    <p class="card-text mt-2">Mobilidade e conectividade com smartphones, tablets e Internet das Coisas.
+                    </p>
+                    <div class="full-content d-none">
+                        <p>Os smartphones e tablets tornaram possível aceder à Internet e a aplicações em qualquer
+                            lugar, transformando a forma como comunicamos e trabalhamos.
+                            Com a Internet das Coisas (IoT), objetos do dia a dia como relógios, eletrodomésticos e
+                            carros começaram também a ligar-se à rede, trocando dados e tornando as nossas vidas mais
+                            práticas e inteligentes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="150">
+            <div class="card decade-card h-100" role="button">
+                <img src="images/historia_da_informatica/computacaoquantica.png" class="card-img-top"
+                    alt="IA e Computação">
+                <div class="card-body text-center">
+                    <div class="decade-year">2000–presente - <strong>IA, Cloud & Computação Quântica</strong></div>
+                    <p class="card-text mt-2">Avanços em machine learning, computação quântica e big data.</p>
+                    <div class="full-content d-none">
+                        <p>Nos últimos anos, a informática tem evoluído a um ritmo impressionante.
+                            O machine learning e a inteligência artificial permitem que os computadores aprendam e tomem
+                            decisões com base em grandes volumes de dados.
+                            A computação quântica surge como uma nova fronteira, capaz de realizar cálculos extremamente
+                            complexos em poucos segundos.
+                            Já a realidade aumentada mistura o mundo digital com o real, criando novas formas de
+                            interação e aprendizagem.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="expanded-card-modal hidden" aria-hidden="true">
+        <div class="expanded-card-container">
+            <button class="expanded-close" aria-label="Fechar">&times;</button>
+            <div class="expanded-body p-3"></div>
+        </div>
+    </div>
 
     <div id="footer-container"></div>
 
@@ -21,6 +423,69 @@
     <script src="footer/footer.js"></script>
     <script src="navbar/navBar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        }, { threshold: 0.2 });
+
+        document.querySelectorAll('.decade-card, .timeline-line').forEach(el => {
+            observer.observe(el);
+        });
+        const expandedModal = document.querySelector('.expanded-card-modal');
+        const expandedBody = document.querySelector('.expanded-body');
+        const expandedClose = document.querySelector('.expanded-close');
+
+        function abrirModalComCard(card) {
+            const img = card.querySelector('img') ? card.querySelector('img').src : '';
+            const alt = card.querySelector('img') ? card.querySelector('img').alt : '';
+            const title = card.querySelector('.decade-year') ? card.querySelector('.decade-year').innerHTML : '';
+            const full = card.querySelector('.full-content') ? card.querySelector('.full-content').innerHTML : '';
+
+            expandedBody.innerHTML = `
+            <div class="card border-0">
+                ${img ? `<img src="${img}" alt="${alt}">` : ''}
+                <div class="card-body">
+                    <div class="decade-year mb-2">${title}</div>
+                    <div class="full-expanded">${full}</div>
+                </div>
+            </div>
+        `;
+            expandedModal.classList.remove('hidden');
+            expandedModal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        }
+
+        document.querySelectorAll('.decade-card').forEach(card => {
+            card.addEventListener('click', () => abrirModalComCard(card));
+        });
+
+        expandedClose.addEventListener('click', () => {
+            expandedModal.classList.add('hidden');
+            expandedModal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        });
+
+        expandedModal.addEventListener('click', e => {
+            if (e.target === expandedModal) {
+                expandedModal.classList.add('hidden');
+                expandedModal.setAttribute('aria-hidden', 'true');
+                document.body.style.overflow = '';
+            }
+        });
+
+        if (typeof AOS !== 'undefined') {
+            AOS.init({
+                duration: 800,
+                once: true,
+            });
+        }
+    </script>
 </body>
 
 </html>

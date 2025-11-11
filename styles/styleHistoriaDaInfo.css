@@ -1,0 +1,107 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.decade-card {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card-container {
+  padding: 30px;
+  border-radius: 30px !important;
+}
+
+.card-container:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+.container-introduction {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.expanded-card-modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(10, 10, 10, 0.6);
+  z-index: 1050;
+  padding: 20px;
+}
+
+.expanded-card-modal.hidden {
+  display: none;
+}
+
+.expanded-card-container {
+  max-width: 900px;
+  width: 100%;
+  max-height: 90vh;
+  overflow: auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+}
+.expanded-close {
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  padding: 8px 14px;
+  float: right;
+}
+.expanded-body img {
+  max-height: 320px;
+  object-fit: cover;
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.expanded-body .card-body {
+  padding: 18px;
+}
+.decade-card {
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.decade-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.timeline-line {
+  position: relative;
+  margin: 2rem auto;
+  height: 5px;
+  width: 90%;
+  background-color: #dee2e6;
+  border-radius: 2px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: -7px;
+  width: 18px;
+  height: 18px;
+  background-color: #0d6efd;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-line.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.d-none {
+  display: none !important;
+}

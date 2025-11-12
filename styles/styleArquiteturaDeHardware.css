@@ -130,3 +130,80 @@ h3 {
     opacity: 1;
   }
 }
+
+.card {
+  padding: 60px 0;
+  border: none;
+}
+
+.card h2 {
+  text-align: start;
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #0d6efd;
+  font-weight: 600;
+}
+
+.card .section-bg {
+  border-radius: 24px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.card ul {
+  list-style: none;
+  padding-left: 0;
+  line-height: 1.8;
+}
+
+.card li {
+  position: relative;
+  margin-bottom: 12px;
+  padding-left: 24px;
+  color: #444;
+  font-size: 16px;
+}
+
+.card li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #3668d3;
+  font-weight: bold;
+}
+
+.card .carousel {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+.card .carousel-item img {
+  width: 100%;
+  height: 320px;
+  object-fit: contain;
+  display: block;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.carousel {
+  width: 300px;
+  height: fit-content;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}

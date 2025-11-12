@@ -1,3 +1,9 @@
+h1,
+h2,
+h3 {
+  color: #0d6efd;
+}
+
 .decade-card {
   border: none;
   border-radius: 30px;
@@ -60,6 +66,11 @@
 
 .card-body {
   min-height: 150px;
+}
+
+.card-container {
+  padding: 30px;
+  border-radius: 30px !important;
 }
 
 /* CSS Do Card Expandido */

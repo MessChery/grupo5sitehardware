@@ -182,15 +182,33 @@
     </section>
   </main>
 
+
+  <button id="backToTopBtn" title="Go to top">↑</button>
+
   <div id="footer-container"></div>
 
-  <!-- Scripts -->
   <script src="footer/footer.js"></script>
   <script src="navbar/navBar.js"></script>
-
-  <!-- AOS JS -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
+
+    const backToTopBtn = document.getElementById("backToTopBtn");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        backToTopBtn.classList.add("show");
+      } else {
+        backToTopBtn.classList.remove("show");
+      }
+    });
+
+    backToTopBtn.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+
     window.addEventListener('load', () => {
       if (typeof AOS !== 'undefined') {
         AOS.init({
